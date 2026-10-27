@@ -1,0 +1,82 @@
+.page-hero {
+    padding: clamp(3.6rem, 7vw, 5.5rem) 0 1rem;
+}
+
+.about-portrait {
+    aspect-ratio: 1;
+    max-width: 210px;
+    display: grid;
+    place-items: center;
+    border-radius: 2rem;
+    color: #fff;
+    font-family: Georgia, serif;
+    font-size: 4rem;
+    background: url("src/portrait.jpeg") center/cover no-repeat;
+    box-shadow: var(--site-shadow);
+}
+
+.timeline-list {
+    display: grid;
+    gap: 1rem;
+}
+
+.timeline-item {
+    display: grid;
+    grid-template-columns: 155px 1fr;
+    gap: 1.5rem;
+    position: relative;
+}
+
+.timeline-date {
+    color: var(--site-accent);
+    font-size: .87rem;
+    font-weight: 800;
+    padding-top: 1.2rem;
+}
+
+.timeline-content {
+    position: relative;
+    padding: 1.25rem 1.4rem;
+    background: var(--site-surface);
+    border: 1px solid var(--site-border);
+    border-radius: 1rem;
+}
+
+.timeline-content::before {
+    content: "";
+    width: .6rem;
+    height: .6rem;
+    border-radius: 50%;
+    position: absolute;
+    top: 1.6rem;
+    left: -1.5rem;
+    background: var(--site-accent);
+    box-shadow: 0 0 0 5px var(--site-accent-soft);
+}
+
+@media (min-width: 700px) {
+    .timeline-list {
+        border-left: 1px solid var(--site-border);
+        margin-left: 155px;
+        padding-left: 1.5rem;
+    }
+
+    .timeline-item {
+        margin-left: -170px;
+    }
+}
+
+@media (max-width: 699.98px) {
+    .timeline-item {
+        grid-template-columns: 1fr;
+        gap: .35rem;
+    }
+
+    .timeline-date {
+        padding: .15rem .25rem;
+    }
+
+    .timeline-content::before {
+        display: none;
+    }
+}

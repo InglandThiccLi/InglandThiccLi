@@ -1,0 +1,8 @@
+.page-hero { padding: clamp(3.6rem, 7vw, 5.5rem) 0 1rem; }
+.project-card { overflow: hidden; height: 100%; transition: transform .25s ease, border-color .25s ease, box-shadow .25s ease; }
+.project-card:hover { transform: translateY(-5px); border-color: color-mix(in srgb, var(--site-accent) 48%, var(--site-border)); box-shadow: 0 22px 48px rgba(24, 41, 42, .12); }
+.project-cover { min-height: 185px; display: flex; align-items: flex-end; justify-content: space-between; padding: 1.25rem; background: var(--cover, linear-gradient(145deg,#173f49,#167d78)); position: relative; overflow: hidden; }
+.project-number, .project-symbol { position: relative; z-index: 1; color: white; }
+.project-number { font-size: .8rem; letter-spacing: .12em; font-weight: 800; opacity: .8; }
+.project-symbol { font-family: Georgia,serif; font-size: 3.4rem; line-height: 1; }
+.project-tag { display: inline-flex; padding: .3rem .6rem; background: var(--site-accent-soft); color: var(--site-accent); border-radius: 999px; font-size: .72rem; font-weight: 800; }

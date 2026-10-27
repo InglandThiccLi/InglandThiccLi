@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en" data-bs-theme="light">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="About me, career timeline, and contact information.">
+    <title data-site-title="title.about">About</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="/Common/styles.css" rel="stylesheet">
+    <link href="about.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/Common/src/favicon.png">
+</head>
+
+<body id="top" data-page="about" data-bs-theme="light">
+    <div id="site-header"></div>
+    <main class="page-shell">
+        <section class="page-hero">
+            <div class="container container-narrow">
+                <div class="eyebrow" data-i18n="about.eyebrow"></div>
+                <h1 class="page-title mt-3 mb-3" data-i18n="about.title"></h1>
+                <p class="lead-copy" data-i18n="about.lead"></p>
+            </div>
+        </section>
+        <section class="content-section pt-4">
+            <div class="container container-narrow">
+                <div class="surface-card p-4 p-lg-5 reveal">
+                    <div class="row g-4 align-items-start">
+                        <div class="col-md-4">
+                            <div class="about-portrait"></div>
+                            <p class="small text-muted-site mt-3 mb-0" style="max-width: 240px;" data-i18n="about.portrait.caption">Me taking photos with cherry blossom in Xinfeng, Guangdong</span>
+                            </p>
+                        </div>
+                        <div class="col-md-8">
+                            <h2 class="section-title mb-3" data-i18n="about.story.title"></h2>
+                            <p class="text-muted-site mb-0" data-i18n="about.story.body"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="content-section pt-2">
+            <div class="container container-narrow">
+                <div class="section-heading-row reveal">
+                    <div>
+                        <div class="eyebrow" data-i18n="about.timeline.eyebrow"></div>
+                        <h2 class="section-title mt-3 mb-0" data-i18n="about.timeline.title"></h2>
+                    </div>
+                </div>
+                <div id="career-timeline" class="timeline-list"></div>
+            </div>
+        </section>
+        <section class="content-section pt-2">
+            <div class="container container-narrow">
+                <div class="soft-panel p-4 p-lg-5 reveal">
+                    <div class="row align-items-center g-3">
+                        <div class="col-md">
+                            <h2 class="section-title mb-2" data-i18n="about.contact.title"></h2>
+                            <p class="text-muted-site mb-0" data-i18n="about.contact.body"></p>
+                            <p class="text-muted-site mb-0" data-i18n="about.contact.email"></p>
+                        </div>
+                        <div class="col-md-auto"><a class="btn btn-site-primary" data-email-button
+                                href="mailto:ustthcli@gmail.com" data-i18n="about.contact.button"></a></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <div id="site-footer"></div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <script src="/Common/config.js" data-root=".."></script>
+    <script src="/Common/scripts.js" data-root=".."></script>
+    <script src="about.js"></script>
+</body>
+
+</html>
